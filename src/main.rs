@@ -1,5 +1,5 @@
 use zero2prod::run;
-#[actix_web::main]
+#[actix_rt::main]
 async fn main() -> std::io::Result<()> {
-    run().await
+    run()?.await
 }
